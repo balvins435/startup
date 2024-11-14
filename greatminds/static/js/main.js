@@ -97,6 +97,19 @@
         }
     });
 
+    document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const brandText = document.querySelector(".navbar-brand-text");
+    
+        if (window.scrollY > 45) {
+            navbar.classList.add("scrolled");
+            brandText.style.color = "#000"; // Black text when scrolled
+        } else {
+            navbar.classList.remove("scrolled");
+            brandText.style.color = "#fff"; // White text by default
+        }
+    });
+
 
     // Vendor carousel
     $('.vendor-carousel').owlCarousel({
@@ -121,15 +134,6 @@
             }
         }
     });
-    document.addEventListener('scroll', function() {
-        var navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
     
 })(jQuery);
-
 

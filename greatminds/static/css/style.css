@@ -212,17 +212,10 @@ h6,
     .sticky-top.navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
-    .navbar.scrolled {
-        background-color: black; /* Change to your desired background color */
-    }
-
-    .navbar .navbar-brand span {
-        color: white; /* Adjust text color for visibility */
+    .navbar-brand-text {
+        transition: color 0.3s ease;
     }
     
-    .navbar.scrolled .navbar-brand span {
-        color: white; /* Adjust text color for visibility on scroll */
-    }
 }
 
 
