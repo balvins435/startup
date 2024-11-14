@@ -212,6 +212,9 @@ h6,
     .sticky-top.navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
+    .navbar.scrolled {
+        background-color: #000; /* Change to your desired background color */
+    }
 }
 
 
