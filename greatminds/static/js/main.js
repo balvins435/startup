@@ -109,6 +109,18 @@
             brandText.style.color = "#fff"; // White text by default
         }
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 45) {  // Adjust this threshold as needed
+                navbar.classList.add('white');
+            } else {
+                navbar.classList.remove('white');
+            }
+        });
+    });
+    
 
 
     // Vendor carousel
